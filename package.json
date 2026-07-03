@@ -1,0 +1,25 @@
+{
+  "name": "annam",
+  "version": "1.0.0",
+  "description": "The Food Donation Platform is a web-based system designed to reduce food wastage and support hunger relief by connecting food donors, NGOs, volunteers, and beneficiaries through a centralized digital platform. Large quantities of surplus food from restaurants, hotels, events, hostels, and households often go to waste while many people struggle with food insecurity. This platform enables donors to register and post food availability details such as quantity, location, pickup time, and food type, while NGOs and volunteers can coordinate food collection and distribution efficiently. The system also provides volunteer tracking and inventory management to monitor food availability, storage, distribution status, and delivery progress in real time. Administrators can manage donations, assign volunteers, track inventory, and generate reports for better operational control. The system includes modules such as donor registration, food donation management, volunteer tracking, inventory management, delivery coordination, notification system, analytics dashboard, and admin panel. The primary objective of the platform is to minimize food wastage, improve donation efficiency, and ensure timely food distribution to those in need through smart digital coordination.",
+  "homepage": "https://github.com/HarshK-Dev108/Annam#readme",
+  "bugs": {
+    "url": "https://github.com/HarshK-Dev108/Annam/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarshK-Dev108/Annam.git"
+  },
+  "license": "ISC",
+  "author": "Harsh_Kishore",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "passport": "^0.7.0"
+  }
+}
