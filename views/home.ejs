@@ -1,215 +1,222 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- layout('layouts/boilerplate') %>
 
-<head>
+    <body>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <section class="hero" id="home">
 
-    <title>Food Donation Platform</title>
+            <div class="container">
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+                <div class="row align-items-center">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+                    <div class="col-lg-6" data-aos="fade-right">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+                        <h1>
 
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+                            Reduce Food Waste
 
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js"></script>
-</head>
+                            <span>
 
-<body>
+                                Feed Lives
 
-    <!--==========================
-NAVBAR
-===========================-->
+                            </span>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+                        </h1>
 
-        <div class="container">
+                        <p>
 
-            <a class="navbar-brand fw-bold" href="#">
+                            Connecting Donors,
+                            NGOs,
+                            Volunteers and Beneficiaries
+                            through an AI Powered Food Donation Platform.
 
-                <i class="fa-solid fa-hand-holding-heart"></i>
+                        </p>
 
-                Food Donation
+                        <div class="mt-4">
 
-            </a>
+                            <a href="#donate" class="btn btn-success btn-lg">
 
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                                Donate Food
 
-                <span class="navbar-toggler-icon"></span>
+                            </a>
 
-            </button>
+                            <a href="#about" class="btn btn-outline-light btn-lg ms-2">
 
-            <div class="collapse navbar-collapse" id="menu">
+                                Learn More
 
-                <ul class="navbar-nav ms-auto">
+                            </a>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
+                        </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
+                    </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li>
+                    <div class="col-lg-6 text-center" data-aos="fade-left">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#ai">AI Scanner</a>
-                    </li>
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=900"
+                            class="img-fluid hero-img">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#leaderboard">Leaderboard</a>
-                    </li>
+                    </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-
-                </ul>
+                </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </nav>
+        <section class="stats">
 
-    <!--==========================
-HERO
-===========================-->
+            <div class="container">
 
-    <section class="hero" id="home">
+                <div class="row text-center">
 
-        <div class="container">
+                    <div class="col-md-3">
 
-            <div class="row align-items-center">
+                        <div class="stat-box">
 
-                <div class="col-lg-6" data-aos="fade-right">
+                            <i class="fa-solid fa-utensils"></i>
 
-                    <h1>
+                            <h2 class="counter" data-target="15000">0</h2>
 
-                        Reduce Food Waste
+                            <p>Meals Served</p>
 
-                        <span>
+                        </div>
 
-                            Feed Lives
+                    </div>
 
-                        </span>
+                    <div class="col-md-3">
 
-                    </h1>
+                        <div class="stat-box">
+
+                            <i class="fa-solid fa-users"></i>
+
+                            <h2 class="counter" data-target="800">0</h2>
+
+                            <p>Registered Donors</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="stat-box">
+
+                            <i class="fa-solid fa-handshake"></i>
+
+                            <h2 class="counter" data-target="350">0</h2>
+
+                            <p>NGO Partners</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="stat-box">
+
+                            <i class="fa-solid fa-earth-asia"></i>
+
+                            <h2 class="counter" data-target="1200">0</h2>
+
+                            <p>Volunteers</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="about py-5" id="about">
+
+            <div class="container">
+
+                <div class="text-center mb-5">
+
+                    <h2>
+
+                        About Our Platform
+
+                    </h2>
 
                     <p>
 
-                        Connecting Donors,
-                        NGOs,
-                        Volunteers and Beneficiaries
-                        through an AI Powered Food Donation Platform.
+                        Our AI-powered platform bridges the gap between food donors, NGOs,
+                        volunteers, and beneficiaries by ensuring surplus food reaches those who need it most.
 
                     </p>
 
-                    <div class="mt-4">
+                </div>
 
-                        <a href="#donate" class="btn btn-success btn-lg">
+                <div class="row">
 
-                            Donate Food
+                    <div class="col-md-4" data-aos="zoom-in">
 
-                        </a>
+                        <div class="about-card">
 
-                        <a href="#about" class="btn btn-outline-light btn-lg ms-2">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
 
-                            Learn More
+                            <h4>
 
-                        </a>
+                                Donate
+
+                            </h4>
+
+                            <p>
+
+                                Restaurants, hotels, households,
+                                and event organizers can donate surplus food.
+
+                            </p>
+
+                        </div>
 
                     </div>
 
-                </div>
+                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
 
-                <div class="col-lg-6 text-center" data-aos="fade-left">
+                        <div class="about-card">
 
-                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=900"
-                        class="img-fluid hero-img">
+                            <i class="fa-solid fa-truck-fast"></i>
 
-                </div>
+                            <h4>
 
-            </div>
+                                Pickup
 
-        </div>
+                            </h4>
 
-    </section>
+                            <p>
 
-    <!--==========================
-STATISTICS
-===========================-->
+                                Nearby volunteers receive pickup requests instantly.
 
-    <section class="stats">
+                            </p>
 
-        <div class="container">
-
-            <div class="row text-center">
-
-                <div class="col-md-3">
-
-                    <div class="stat-box">
-
-                        <i class="fa-solid fa-utensils"></i>
-
-                        <h2 class="counter" data-target="15000">0</h2>
-
-                        <p>Meals Served</p>
+                        </div>
 
                     </div>
 
-                </div>
+                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
 
-                <div class="col-md-3">
+                        <div class="about-card">
 
-                    <div class="stat-box">
+                            <i class="fa-solid fa-bowl-food"></i>
 
-                        <i class="fa-solid fa-users"></i>
+                            <h4>
 
-                        <h2 class="counter" data-target="800">0</h2>
+                                Distribution
 
-                        <p>Registered Donors</p>
+                            </h4>
 
-                    </div>
+                            <p>
 
-                </div>
+                                NGOs distribute food quickly using AI demand prediction.
 
-                <div class="col-md-3">
+                            </p>
 
-                    <div class="stat-box">
-
-                        <i class="fa-solid fa-handshake"></i>
-
-                        <h2 class="counter" data-target="350">0</h2>
-
-                        <p>NGO Partners</p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-3">
-
-                    <div class="stat-box">
-
-                        <i class="fa-solid fa-earth-asia"></i>
-
-                        <h2 class="counter" data-target="1200">0</h2>
-
-                        <p>Volunteers</p>
+                        </div>
 
                     </div>
 
@@ -217,420 +224,399 @@ STATISTICS
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
-
-    <!--==========================
-ABOUT
-===========================-->
-
-    <section class="about py-5" id="about">
-
-        <div class="container">
-
-            <div class="text-center mb-5">
-
-                <h2>
-
-                    About Our Platform
-
-                </h2>
-
-                <p>
-
-                    Our AI-powered platform bridges the gap between food donors, NGOs,
-                    volunteers, and beneficiaries by ensuring surplus food reaches those who need it most.
-
-                </p>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col-md-4" data-aos="zoom-in">
-
-                    <div class="about-card">
-
-                        <i class="fa-solid fa-hand-holding-heart"></i>
-
-                        <h4>
-
-                            Donate
-
-                        </h4>
-
-                        <p>
-
-                            Restaurants, hotels, households,
-                            and event organizers can donate surplus food.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-
-                    <div class="about-card">
-
-                        <i class="fa-solid fa-truck-fast"></i>
-
-                        <h4>
-
-                            Pickup
-
-                        </h4>
-
-                        <p>
-
-                            Nearby volunteers receive pickup requests instantly.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
-
-                    <div class="about-card">
-
-                        <i class="fa-solid fa-bowl-food"></i>
-
-                        <h4>
-
-                            Distribution
-
-                        </h4>
-
-                        <p>
-
-                            NGOs distribute food quickly using AI demand prediction.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!--==========================
+        <!--==========================
 HOW IT WORKS
 ===========================-->
 
-    <section class="process py-5">
+        <section class="process py-5">
 
-        <div class="container">
+            <div class="container">
 
-            <div class="text-center mb-5">
+                <div class="text-center mb-5">
 
-                <h2>
+                    <h2>
 
-                    How It Works
+                        How It Works
 
-                </h2>
+                    </h2>
+
+                </div>
+
+                <div class="row text-center">
+
+                    <div class="col-md-3">
+
+                        <div class="step" data-aos="zoom-in">
+
+                            <div class="circle">
+
+                                1
+
+                            </div>
+
+                            <h5>
+
+                                Register
+
+                            </h5>
+
+                            <p>
+
+                                Create donor or volunteer account.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="step" data-aos="zoom-in">
+
+                            <div class="circle">
+
+                                2
+
+                            </div>
+
+                            <h5>
+
+                                Upload Food
+
+                            </h5>
+
+                            <p>
+
+                                Add quantity,
+                                image,
+                                pickup location.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="step" data-aos="zoom-in">
+
+                            <div class="circle">
+
+                                3
+
+                            </div>
+
+                            <h5>
+
+                                AI Verification
+
+                            </h5>
+
+                            <p>
+
+                                AI checks freshness and predicts demand.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="step" data-aos="zoom-in">
+
+                            <div class="circle">
+
+                                4
+
+                            </div>
+
+                            <h5>
+
+                                Delivery
+
+                            </h5>
+
+                            <p>
+
+                                Volunteer delivers food to NGOs.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <div class="row text-center">
-
-                <div class="col-md-3">
-
-                    <div class="step">
-
-                        <div class="circle">
-
-                            1
-
-                        </div>
-
-                        <h5>
-
-                            Register
-
-                        </h5>
-
-                        <p>
-
-                            Create donor or volunteer account.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-3">
-
-                    <div class="step">
-
-                        <div class="circle">
-
-                            2
-
-                        </div>
-
-                        <h5>
-
-                            Upload Food
-
-                        </h5>
-
-                        <p>
-
-                            Add quantity,
-                            image,
-                            pickup location.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-3">
-
-                    <div class="step">
-
-                        <div class="circle">
-
-                            3
-
-                        </div>
-
-                        <h5>
-
-                            AI Verification
-
-                        </h5>
-
-                        <p>
-
-                            AI checks freshness and predicts demand.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-3">
-
-                    <div class="step">
-
-                        <div class="circle">
-
-                            4
-
-                        </div>
-
-                        <h5>
-
-                            Delivery
-
-                        </h5>
-
-                        <p>
-
-                            Volunteer delivers food to NGOs.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-    <!-- ==========================
+        </section>
+        <!-- ==========================
 FEATURES
 =========================== -->
 
-    <section id="features" class="py-5 bg-light">
+        <section id="features" class="py-5 bg-light">
 
-        <div class="container">
+            <div class="container">
 
-            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="text-center mb-5" data-aos="fade-up">
 
-                <h2 class="fw-bold">Platform Features</h2>
+                    <h2 class="fw-bold">Platform Features</h2>
 
-                <p class="text-muted">
-                    Making food donation smarter, faster and more transparent.
-                </p>
+                    <p class="text-muted">
+                        Making food donation smarter, faster and more transparent.
+                    </p>
+
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in">
+
+                        <div class="feature-card text-center">
+
+                            <div class="feature-icon bg-success">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+
+                            <h4>Easy Donation</h4>
+
+                            <p>
+                                Donate surplus food in less than one minute.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+
+                        <div class="feature-card text-center">
+
+                            <div class="feature-icon bg-primary">
+                                <i class="fas fa-truck"></i>
+                            </div>
+
+                            <h4>Fast Pickup</h4>
+
+                            <p>
+                                Nearby volunteers are notified instantly.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+
+                        <div class="feature-card text-center">
+
+                            <div class="feature-icon bg-warning">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+
+                            <h4>Analytics</h4>
+
+                            <p>
+                                Track donations, inventory and food distribution.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+
+                        <div class="feature-card text-center">
+
+                            <div class="feature-icon bg-danger">
+                                <i class="fas fa-robot"></i>
+                            </div>
+
+                            <h4>AI Powered</h4>
+
+                            <p>
+                                Smart freshness detection and demand prediction.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <div class="row g-4">
-
-                <div class="col-lg-3 col-md-6" data-aos="zoom-in">
-
-                    <div class="feature-card text-center">
-
-                        <div class="feature-icon bg-success">
-                            <i class="fas fa-hand-holding-heart"></i>
-                        </div>
-
-                        <h4>Easy Donation</h4>
-
-                        <p>
-                            Donate surplus food in less than one minute.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-
-                    <div class="feature-card text-center">
-
-                        <div class="feature-icon bg-primary">
-                            <i class="fas fa-truck"></i>
-                        </div>
-
-                        <h4>Fast Pickup</h4>
-
-                        <p>
-                            Nearby volunteers are notified instantly.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-
-                    <div class="feature-card text-center">
-
-                        <div class="feature-icon bg-warning">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-
-                        <h4>Analytics</h4>
-
-                        <p>
-                            Track donations, inventory and food distribution.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-
-                    <div class="feature-card text-center">
-
-                        <div class="feature-icon bg-danger">
-                            <i class="fas fa-robot"></i>
-                        </div>
-
-                        <h4>AI Powered</h4>
-
-                        <p>
-                            Smart freshness detection and demand prediction.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- ==========================
+        <!-- ==========================
 AI FOOD FRESHNESS
 =========================== -->
 
-    <section id="ai" class="py-5">
+        <section id="ai" class="py-5">
 
-        <div class="container">
+            <div class="container">
 
-            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="text-center mb-5" data-aos="fade-up">
 
-                <h2 class="fw-bold">
+                    <h2 class="fw-bold">
 
-                    🤖 AI Food Freshness Prediction
+                        🤖 AI Food Freshness Prediction
 
-                </h2>
+                    </h2>
 
-                <p class="text-muted">
+                    <p class="text-muted">
 
-                    Upload a food image and let Artificial Intelligence
-                    predict its freshness before donation.
+                        Upload a food image and let Artificial Intelligence
+                        predict its freshness before donation.
 
-                </p>
+                    </p>
 
-            </div>
+                </div>
 
-            <div class="row align-items-center">
+                <div class="row align-items-center">
 
-                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="col-lg-6" data-aos="fade-right">
 
-                    <div class="card shadow-lg border-0 p-4">
+                        <div class="card shadow-lg border-0 p-4">
 
-                        <h4 class="mb-4">
+                            <h4 class="mb-4">
 
-                            Upload Food Image
+                                Upload Food Image
 
-                        </h4>
+                            </h4>
 
-                        <input type="file" class="form-control mb-3">
+                            <input type="file" class="form-control mb-3">
 
-                        <button class="btn btn-success btn-lg">
+                            <button class="btn btn-success btn-lg">
 
-                            <i class="fas fa-magnifying-glass"></i>
+                                <i class="fas fa-magnifying-glass"></i>
 
-                            Analyze Food
+                                Analyze Food
 
-                        </button>
+                            </button>
 
-                        <hr>
+                            <hr>
 
-                        <h5 class="mt-3">
+                            <h5 class="mt-3">
 
-                            Supported Food
+                                Supported Food
 
-                        </h5>
+                            </h5>
 
-                        <div class="mt-3">
+                            <div class="mt-3">
 
-                            <span class="badge bg-success m-1">
-                                Rice
-                            </span>
+                                <span class="badge bg-success m-1">
+                                    Rice
+                                </span>
 
-                            <span class="badge bg-success m-1">
-                                Bread
-                            </span>
+                                <span class="badge bg-success m-1">
+                                    Bread
+                                </span>
 
-                            <span class="badge bg-success m-1">
-                                Vegetables
-                            </span>
+                                <span class="badge bg-success m-1">
+                                    Vegetables
+                                </span>
 
-                            <span class="badge bg-success m-1">
-                                Fruits
-                            </span>
+                                <span class="badge bg-success m-1">
+                                    Fruits
+                                </span>
 
-                            <span class="badge bg-success m-1">
-                                Packed Meals
-                            </span>
+                                <span class="badge bg-success m-1">
+                                    Packed Meals
+                                </span>
 
-                            <span class="badge bg-success m-1">
-                                Snacks
-                            </span>
+                                <span class="badge bg-success m-1">
+                                    Snacks
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-6" data-aos="fade-left">
+
+                        <div class="card shadow-lg border-0 p-4">
+
+                            <h4 class="text-center mb-4">
+
+                                AI Analysis Result
+
+                            </h4>
+
+                            <table class="table">
+
+                                <tr>
+
+                                    <th>Food</th>
+
+                                    <td>Vegetable Biryani</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <th>Freshness</th>
+
+                                    <td>
+
+                                        <div class="progress">
+
+                                            <div class="progress-bar bg-success" style="width:92%">
+
+                                                92%
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <th>Estimated Meals</th>
+
+                                    <td>48 People</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <th>Shelf Life</th>
+
+                                    <td>5 Hours Remaining</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <th>Status</th>
+
+                                    <td>
+
+                                        <span class="badge bg-success">
+
+                                            Safe For Donation
+
+                                        </span>
+
+                                    </td>
+
+                                </tr>
+
+                            </table>
 
                         </div>
 
@@ -638,72 +624,315 @@ AI FOOD FRESHNESS
 
                 </div>
 
+            </div>
 
-                <div class="col-lg-6" data-aos="fade-left">
+        </section>
 
-                    <div class="card shadow-lg border-0 p-4">
 
-                        <h4 class="text-center mb-4">
+        <!-- ==========================
+QR CODE VERIFICATION
+=========================== -->
 
-                            AI Analysis Result
+        <section id="qr" class="py-5 bg-light">
 
-                        </h4>
+            <div class="container">
 
-                        <table class="table">
+                <div class="text-center mb-5" data-aos="fade-up">
 
-                            <tr>
+                    <h2 class="fw-bold">
 
-                                <th>Food</th>
+                        📱 QR Code Verification
 
-                                <td>Vegetable Biryani</td>
+                    </h2>
 
-                            </tr>
+                    <p class="text-muted">
 
-                            <tr>
+                        Every donation receives a unique QR Code
+                        to verify pickup and delivery.
 
-                                <th>Freshness</th>
+                    </p>
 
-                                <td>
+                </div>
 
-                                    <div class="progress">
+                <div class="row align-items-center">
 
-                                        <div class="progress-bar bg-success" style="width:92%">
+                    <div class="col-lg-6" data-aos="fade-right">
 
-                                            92%
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=350x350&data=FoodDonationPlatform"
+                            class="img-fluid rounded shadow">
 
-                                        </div>
+                    </div>
 
+                    <div class="col-lg-6" data-aos="fade-left">
+
+                        <div class="timeline">
+
+                            <div class="timeline-item">
+
+                                <i class="fas fa-qrcode text-success"></i>
+
+                                <h5>
+
+                                    QR Generated
+
+                                </h5>
+
+                                <p>
+
+                                    A QR code is automatically created
+                                    when food is donated.
+
+                                </p>
+
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <i class="fas fa-mobile-screen-button text-primary"></i>
+
+                                <h5>
+
+                                    Volunteer Scan
+
+                                </h5>
+
+                                <p>
+
+                                    Volunteer scans QR during pickup.
+
+                                </p>
+
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <i class="fas fa-check-circle text-warning"></i>
+
+                                <h5>
+
+                                    Verification
+
+                                </h5>
+
+                                <p>
+
+                                    Donation gets verified instantly.
+
+                                </p>
+
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <i class="fas fa-box-open text-danger"></i>
+
+                                <h5>
+
+                                    Delivery Completed
+
+                                </h5>
+
+                                <p>
+
+                                    NGO scans again to confirm delivery.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ==========================
+AI DEMAND PREDICTION
+=========================== -->
+
+        <section id="prediction" class="py-5">
+
+            <div class="container">
+
+                <div class="text-center mb-5" data-aos="fade-up">
+
+                    <h2 class="fw-bold">🧠 AI Demand Prediction</h2>
+
+                    <p class="text-muted">
+                        AI analyzes previous donations and predicts which food items are expected to be in high demand.
+                    </p>
+
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-lg-4" data-aos="zoom-in">
+
+                        <div class="card prediction-card shadow border-0 h-100">
+
+                            <div class="card-body text-center">
+
+                                <i class="fas fa-bowl-rice fa-3x text-success mb-3"></i>
+
+                                <h4>Rice</h4>
+
+                                <span class="badge bg-danger fs-6">High Demand</span>
+
+                                <div class="progress mt-4">
+
+                                    <div class="progress-bar bg-danger" style="width:95%">
+                                        95%
                                     </div>
 
-                                </td>
+                                </div>
 
-                            </tr>
+                                <p class="mt-3 text-muted">
+                                    Expected shortage in the next 24 hours.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+
+                        <div class="card shadow border-0 h-100">
+
+                            <div class="card-body text-center">
+
+                                <i class="fas fa-bread-slice fa-3x text-warning mb-3"></i>
+
+                                <h4>Bread</h4>
+
+                                <span class="badge bg-warning text-dark fs-6">
+                                    Medium Demand
+                                </span>
+
+                                <div class="progress mt-4">
+
+                                    <div class="progress-bar bg-warning text-dark" style="width:70%">
+                                        70%
+                                    </div>
+
+                                </div>
+
+                                <p class="mt-3 text-muted">
+                                    Moderate stock available.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+
+                        <div class="card shadow border-0 h-100">
+
+                            <div class="card-body text-center">
+
+                                <i class="fas fa-apple-whole fa-3x text-primary mb-3"></i>
+
+                                <h4>Fruits</h4>
+
+                                <span class="badge bg-success fs-6">
+                                    Low Demand
+                                </span>
+
+                                <div class="progress mt-4">
+
+                                    <div class="progress-bar bg-success" style="width:45%">
+                                        45%
+                                    </div>
+
+                                </div>
+
+                                <p class="mt-3 text-muted">
+                                    Current inventory is sufficient.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================
+VOLUNTEER LEADERBOARD
+=========================== -->
+
+        <section id="leaderboard" class="py-5 bg-light">
+
+            <div class="container">
+
+                <div class="text-center mb-5" data-aos="fade-up">
+
+                    <h2 class="fw-bold">
+
+                        🏆 Volunteer Leaderboard
+
+                    </h2>
+
+                    <p class="text-muted">
+
+                        Recognizing our most dedicated volunteers.
+
+                    </p>
+
+                </div>
+
+                <div class="table-responsive shadow rounded">
+
+                    <table class="table table-hover table-striped align-middle mb-0">
+
+                        <thead class="table-success">
 
                             <tr>
 
-                                <th>Estimated Meals</th>
+                                <th>Rank</th>
 
-                                <td>48 People</td>
+                                <th>Volunteer</th>
 
-                            </tr>
+                                <th>Completed Deliveries</th>
 
-                            <tr>
+                                <th>Points</th>
 
-                                <th>Shelf Life</th>
-
-                                <td>5 Hours Remaining</td>
+                                <th>Badge</th>
 
                             </tr>
 
+                        </thead>
+
+                        <tbody>
+
                             <tr>
 
-                                <th>Status</th>
+                                <td>🥇</td>
+
+                                <td>Rahul Sharma</td>
+
+                                <td>182</td>
+
+                                <td>5400</td>
 
                                 <td>
 
-                                    <span class="badge bg-success">
+                                    <span class="badge bg-warning text-dark">
 
-                                        Safe For Donation
+                                        Gold
 
                                     </span>
 
@@ -711,691 +940,270 @@ AI FOOD FRESHNESS
 
                             </tr>
 
-                        </table>
+                            <tr>
 
-                    </div>
+                                <td>🥈</td>
 
-                </div>
+                                <td>Priya Singh</td>
 
-            </div>
+                                <td>171</td>
 
-        </div>
+                                <td>5120</td>
 
-    </section>
+                                <td>
 
+                                    <span class="badge bg-secondary">
 
-    <!-- ==========================
-QR CODE VERIFICATION
-=========================== -->
+                                        Silver
 
-    <section id="qr" class="py-5 bg-light">
+                                    </span>
 
-        <div class="container">
+                                </td>
 
-            <div class="text-center mb-5" data-aos="fade-up">
+                            </tr>
 
-                <h2 class="fw-bold">
+                            <tr>
 
-                    📱 QR Code Verification
+                                <td>🥉</td>
 
-                </h2>
+                                <td>Aman Verma</td>
 
-                <p class="text-muted">
+                                <td>160</td>
 
-                    Every donation receives a unique QR Code
-                    to verify pickup and delivery.
+                                <td>4860</td>
 
-                </p>
+                                <td>
 
-            </div>
+                                    <span class="badge bg-danger">
 
-            <div class="row align-items-center">
+                                        Bronze
 
-                <div class="col-lg-6" data-aos="fade-right">
+                                    </span>
 
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=350x350&data=FoodDonationPlatform"
-                        class="img-fluid rounded shadow">
+                                </td>
 
-                </div>
+                            </tr>
 
-                <div class="col-lg-6" data-aos="fade-left">
+                            <tr>
 
-                    <div class="timeline">
+                                <td>4</td>
 
-                        <div class="timeline-item">
+                                <td>Neha Kapoor</td>
 
-                            <i class="fas fa-qrcode text-success"></i>
+                                <td>145</td>
 
-                            <h5>
+                                <td>4510</td>
 
-                                QR Generated
+                                <td>
 
-                            </h5>
+                                    <span class="badge bg-primary">
 
-                            <p>
+                                        Star
 
-                                A QR code is automatically created
-                                when food is donated.
+                                    </span>
 
-                            </p>
+                                </td>
 
-                        </div>
+                            </tr>
 
-                        <div class="timeline-item">
+                            <tr>
 
-                            <i class="fas fa-mobile-screen-button text-primary"></i>
+                                <td>5</td>
 
-                            <h5>
+                                <td>Rohit Kumar</td>
 
-                                Volunteer Scan
+                                <td>139</td>
 
-                            </h5>
+                                <td>4330</td>
 
-                            <p>
+                                <td>
 
-                                Volunteer scans QR during pickup.
+                                    <span class="badge bg-success">
 
-                            </p>
+                                        Rising
 
-                        </div>
+                                    </span>
 
-                        <div class="timeline-item">
+                                </td>
 
-                            <i class="fas fa-check-circle text-warning"></i>
+                            </tr>
 
-                            <h5>
+                        </tbody>
 
-                                Verification
-
-                            </h5>
-
-                            <p>
-
-                                Donation gets verified instantly.
-
-                            </p>
-
-                        </div>
-
-                        <div class="timeline-item">
-
-                            <i class="fas fa-box-open text-danger"></i>
-
-                            <h5>
-
-                                Delivery Completed
-
-                            </h5>
-
-                            <p>
-
-                                NGO scans again to confirm delivery.
-
-                            </p>
-
-                        </div>
-
-                    </div>
+                    </table>
 
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
-    <!-- ==========================
-AI DEMAND PREDICTION
-=========================== -->
 
-    <section id="prediction" class="py-5">
-
-        <div class="container">
-
-            <div class="text-center mb-5" data-aos="fade-up">
-
-                <h2 class="fw-bold">🧠 AI Demand Prediction</h2>
-
-                <p class="text-muted">
-                    AI analyzes previous donations and predicts which food items are expected to be in high demand.
-                </p>
-
-            </div>
-
-            <div class="row g-4">
-
-                <div class="col-lg-4" data-aos="zoom-in">
-
-                    <div class="card prediction-card shadow border-0 h-100">
-
-                        <div class="card-body text-center">
-
-                            <i class="fas fa-bowl-rice fa-3x text-success mb-3"></i>
-
-                            <h4>Rice</h4>
-
-                            <span class="badge bg-danger fs-6">High Demand</span>
-
-                            <div class="progress mt-4">
-
-                                <div class="progress-bar bg-danger" style="width:95%">
-                                    95%
-                                </div>
-
-                            </div>
-
-                            <p class="mt-3 text-muted">
-                                Expected shortage in the next 24 hours.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="150">
-
-                    <div class="card shadow border-0 h-100">
-
-                        <div class="card-body text-center">
-
-                            <i class="fas fa-bread-slice fa-3x text-warning mb-3"></i>
-
-                            <h4>Bread</h4>
-
-                            <span class="badge bg-warning text-dark fs-6">
-                                Medium Demand
-                            </span>
-
-                            <div class="progress mt-4">
-
-                                <div class="progress-bar bg-warning text-dark" style="width:70%">
-                                    70%
-                                </div>
-
-                            </div>
-
-                            <p class="mt-3 text-muted">
-                                Moderate stock available.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-
-                    <div class="card shadow border-0 h-100">
-
-                        <div class="card-body text-center">
-
-                            <i class="fas fa-apple-whole fa-3x text-primary mb-3"></i>
-
-                            <h4>Fruits</h4>
-
-                            <span class="badge bg-success fs-6">
-                                Low Demand
-                            </span>
-
-                            <div class="progress mt-4">
-
-                                <div class="progress-bar bg-success" style="width:45%">
-                                    45%
-                                </div>
-
-                            </div>
-
-                            <p class="mt-3 text-muted">
-                                Current inventory is sufficient.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ==========================
-VOLUNTEER LEADERBOARD
-=========================== -->
-
-    <section id="leaderboard" class="py-5 bg-light">
-
-        <div class="container">
-
-            <div class="text-center mb-5" data-aos="fade-up">
-
-                <h2 class="fw-bold">
-
-                    🏆 Volunteer Leaderboard
-
-                </h2>
-
-                <p class="text-muted">
-
-                    Recognizing our most dedicated volunteers.
-
-                </p>
-
-            </div>
-
-            <div class="table-responsive shadow rounded">
-
-                <table class="table table-hover table-striped align-middle mb-0">
-
-                    <thead class="table-success">
-
-                        <tr>
-
-                            <th>Rank</th>
-
-                            <th>Volunteer</th>
-
-                            <th>Completed Deliveries</th>
-
-                            <th>Points</th>
-
-                            <th>Badge</th>
-
-                        </tr>
-
-                    </thead>
-
-                    <tbody>
-
-                        <tr>
-
-                            <td>🥇</td>
-
-                            <td>Rahul Sharma</td>
-
-                            <td>182</td>
-
-                            <td>5400</td>
-
-                            <td>
-
-                                <span class="badge bg-warning text-dark">
-
-                                    Gold
-
-                                </span>
-
-                            </td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td>🥈</td>
-
-                            <td>Priya Singh</td>
-
-                            <td>171</td>
-
-                            <td>5120</td>
-
-                            <td>
-
-                                <span class="badge bg-secondary">
-
-                                    Silver
-
-                                </span>
-
-                            </td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td>🥉</td>
-
-                            <td>Aman Verma</td>
-
-                            <td>160</td>
-
-                            <td>4860</td>
-
-                            <td>
-
-                                <span class="badge bg-danger">
-
-                                    Bronze
-
-                                </span>
-
-                            </td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td>4</td>
-
-                            <td>Neha Kapoor</td>
-
-                            <td>145</td>
-
-                            <td>4510</td>
-
-                            <td>
-
-                                <span class="badge bg-primary">
-
-                                    Star
-
-                                </span>
-
-                            </td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td>5</td>
-
-                            <td>Rohit Kumar</td>
-
-                            <td>139</td>
-
-                            <td>4330</td>
-
-                            <td>
-
-                                <span class="badge bg-success">
-
-                                    Rising
-
-                                </span>
-
-                            </td>
-
-                        </tr>
-
-                    </tbody>
-
-                </table>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ==========================
+        <!-- ==========================
 OUR IMPACT
 =========================== -->
 
-    <section class="py-5">
+        <section class="py-5">
 
-        <div class="container">
+            <div class="container">
 
-            <div class="text-center mb-5">
+                <div class="text-center mb-5">
 
-                <h2 class="fw-bold">
+                    <h2 class="fw-bold">
 
-                    🌍 Our Impact
+                        🌍 Our Impact
 
-                </h2>
+                    </h2>
+
+                </div>
+
+                <div class="row text-center g-4">
+
+                    <div class="col-md-3">
+
+                        <div class="impact-box">
+
+                            <h3>15K+</h3>
+
+                            <p>Meals Served</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="impact-box">
+
+                            <h3>5 Tons</h3>
+
+                            <p>Food Saved</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="impact-box">
+
+                            <h3>1200+</h3>
+
+                            <p>Volunteers</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="impact-box">
+
+                            <h3>350+</h3>
+
+                            <p>NGO Partners</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <div class="row text-center g-4">
-
-                <div class="col-md-3">
-
-                    <div class="impact-box">
-
-                        <h3>15K+</h3>
-
-                        <p>Meals Served</p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-3">
-
-                    <div class="impact-box">
-
-                        <h3>5 Tons</h3>
-
-                        <p>Food Saved</p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-3">
-
-                    <div class="impact-box">
-
-                        <h3>1200+</h3>
-
-                        <p>Volunteers</p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-3">
-
-                    <div class="impact-box">
-
-                        <h3>350+</h3>
-
-                        <p>NGO Partners</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- ==========================
+        <!-- ==========================
 CONTACT
 =========================== -->
 
-    <section id="contact" class="py-5 bg-light">
+        <section id="contact" class="py-5 bg-light">
 
-        <div class="container">
+            <div class="container">
 
-            <div class="text-center mb-5">
+                <div class="text-center mb-5">
 
-                <h2 class="fw-bold">
+                    <h2 class="fw-bold">
 
-                    Contact Us
+                        Contact Us
 
-                </h2>
-
-                <p>
-
-                    We'd love to hear from you.
-
-                </p>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col-lg-6">
-
-                    <input class="form-control mb-3" placeholder="Your Name">
-
-                    <input class="form-control mb-3" placeholder="Email">
-
-                    <input class="form-control mb-3" placeholder="Phone Number">
-
-                    <textarea class="form-control mb-3" rows="5" placeholder="Message"></textarea>
-
-                    <button class="btn btn-success btn-lg w-100">
-
-                        Send Message
-
-                    </button>
-
-                </div>
-
-                <div class="col-lg-6">
-
-                    <div class="card shadow border-0 p-4 h-100">
-
-                        <h4>
-
-                            Office Information
-
-                        </h4>
-
-                        <hr>
-
-                        <p>
-
-                            <i class="fas fa-location-dot text-success"></i>
-
-                            Lovely Professional University,
-                            Punjab
-
-                        </p>
-
-                        <p>
-
-                            <i class="fas fa-phone text-success"></i>
-
-                            +91 9876543210
-
-                        </p>
-
-                        <p>
-
-                            <i class="fas fa-envelope text-success"></i>
-
-                            fooddonation@email.com
-
-                        </p>
-
-                        <p>
-
-                            <i class="fas fa-clock text-success"></i>
-
-                            Mon - Sat | 9 AM - 6 PM
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ==========================
-FOOTER
-=========================== -->
-
-    <footer class="bg-dark text-white pt-5 pb-3">
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-lg-4">
-
-                    <h4>
-
-                        Food Donation Platform
-
-                    </h4>
+                    </h2>
 
                     <p>
 
-                        Reducing food wastage through AI-powered coordination between donors, NGOs and volunteers.
+                        We'd love to hear from you.
 
                     </p>
 
                 </div>
 
-                <div class="col-lg-2">
+                <div class="row">
 
-                    <h5>
+                    <div class="col-lg-6">
 
-                        Quick Links
+                        <input class="form-control mb-3" placeholder="Your Name">
 
-                    </h5>
+                        <input class="form-control mb-3" placeholder="Email">
 
-                    <ul class="list-unstyled">
+                        <input class="form-control mb-3" placeholder="Phone Number">
 
-                        <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                        <textarea class="form-control mb-3" rows="5" placeholder="Message"></textarea>
 
-                        <li><a href="#about" class="text-white text-decoration-none">About</a></li>
+                        <button class="btn btn-success btn-lg w-100">
 
-                        <li><a href="#features" class="text-white text-decoration-none">Features</a></li>
+                            Send Message
 
-                        <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                        </button>
 
-                    </ul>
+                    </div>
 
-                </div>
+                    <div class="col-lg-6">
 
-                <div class="col-lg-3">
+                        <div class="card shadow border-0 p-4 h-100">
 
-                    <h5>
+                            <h4>
 
-                        Features
+                                Office Information
 
-                    </h5>
+                            </h4>
 
-                    <ul class="list-unstyled">
+                            <hr>
 
-                        <li>AI Freshness Prediction</li>
+                            <p>
 
-                        <li>QR Verification</li>
+                                <i class="fas fa-location-dot text-success"></i>
 
-                        <li>AI Demand Prediction</li>
+                                Lovely Professional University,
+                                Punjab
 
-                        <li>Volunteer Leaderboard</li>
+                            </p>
 
-                    </ul>
+                            <p>
 
-                </div>
+                                <i class="fas fa-phone text-success"></i>
 
-                <div class="col-lg-3">
+                                +91 9876543210
 
-                    <h5>
+                            </p>
 
-                        Follow Us
+                            <p>
 
-                    </h5>
+                                <i class="fas fa-envelope text-success"></i>
 
-                    <div class="fs-3">
+                                fooddonation@email.com
 
-                        <i class="fab fa-facebook me-3"></i>
+                            </p>
 
-                        <i class="fab fa-instagram me-3"></i>
+                            <p>
 
-                        <i class="fab fa-x-twitter me-3"></i>
+                                <i class="fas fa-clock text-success"></i>
 
-                        <i class="fab fa-linkedin"></i>
+                                Mon - Sat | 9 AM - 6 PM
+
+                            </p>
+
+                        </div>
 
                     </div>
 
@@ -1403,42 +1211,15 @@ FOOTER
 
             </div>
 
-            <hr class="border-secondary">
+        </section>
 
-            <div class="text-center">
+        <!-- Back To Top -->
 
-                © 2026 Food Donation Platform | Built with ❤️ for Communities
+        <button id="topBtn" class="btn btn-success">
 
-            </div>
+            <i class="fas fa-arrow-up"></i>
 
-        </div>
+        </button>
+    </body>
 
-    </footer>
-
-
-    <!-- Back To Top -->
-
-    <button id="topBtn" class="btn btn-success">
-
-        <i class="fas fa-arrow-up"></i>
-
-    </button>
-
-
-    <!-- Bootstrap -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- AOS -->
-
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-    <script>
-        AOS.init();
-    </script>
-
-    <script src="script.js"></script>
-
-</body>
-
-</html>
+    </html>

@@ -6,11 +6,9 @@
 /*==============================
 LOADER
 ==============================*/
-
 window.addEventListener("load", function () {
 
     const loader = document.getElementById("loader");
-
     setTimeout(() => {
 
         loader.classList.add("fade-out");
@@ -24,15 +22,15 @@ window.addEventListener("load", function () {
 AOS INIT
 ==============================*/
 
-AOS.init({
+// AOS.init({
 
-    duration: 1000,
+//     duration: 1000,
 
-    once: true,
+//     once: true,
 
-    offset: 100
+//     offset: 100
 
-});
+// });
 
 
 /*==============================
@@ -102,29 +100,21 @@ counters.forEach(counter => {
 STICKY NAVBAR EFFECT
 ==============================*/
 
-const navbar = document.querySelector(".navbar");
-
-window.addEventListener("scroll", () => {
-
-    if (window.scrollY > 80) {
-
-        navbar.style.background = "rgba(20,20,20,.96)";
-
-        navbar.style.padding = "10px 0";
-
-        navbar.style.boxShadow = "0 8px 25px rgba(0,0,0,.25)";
-
-    } else {
-
-        navbar.style.background = "rgba(33,37,41,.90)";
-
-        navbar.style.padding = "14px 0";
-
-        navbar.style.boxShadow = "none";
-
-    }
-
-});
+// const navbar = document.querySelector("nav");
+// console.log(navbar);
+// window.addEventListener("scroll", () => {
+//     console.log(window.scrollY);
+//     if (window.scrollY > 1000) {
+//         console.log("Scrolled!");
+//         navbar.style.background = "rgba(33, 37, 41, .90)";
+//         navbar.style.padding = "10px 0";
+//         navbar.style.boxShadow = "0 8px 25px rgba(0,0,0,.25)";
+//     } else {
+//         navbar.style.background = "rgb(0, 0, 0)";
+//         navbar.style.padding = "14px 0";
+//         navbar.style.boxShadow = "none";
+//     }
+// });
 
 
 /*==============================
@@ -134,29 +124,18 @@ BACK TO TOP BUTTON
 const topBtn = document.getElementById("topBtn");
 
 window.addEventListener("scroll", () => {
-
     if (window.scrollY > 500) {
-
         topBtn.style.display = "flex";
-
     } else {
-
         topBtn.style.display = "none";
-
     }
-
 });
 
 topBtn.addEventListener("click", () => {
-
     window.scrollTo({
-
         top: 0,
-
         behavior: "smooth"
-
     });
-
 });
 
 
