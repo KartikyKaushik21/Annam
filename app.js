@@ -2,11 +2,32 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 import ejsMate from "ejs-mate";
+import mongoose from "mongoose";
+import NGO from "./models/ngo.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const app = express();
 
+
+const MONGO_URL = "mongodb://127.0.0.1:27017/annam";
+async function main() {
+    await mongoose.connect(MONGO_URL);
+
+    const ngo = new NGO({
+        name: "Old Age Home",
+        email: "abc@gmail.com",
+    });
+
+    await ngo.save();
+    console.log("NGO saved");
+}
+
+main().then(() => [
+    console.log("DB is connected")
+]).catch((err) => {
+    console.log(err)
+})
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
@@ -20,12 +41,8 @@ app.use(
 app.engine('ejs', ejsMate);
 
 app.get("/", (req, res) => {
-    res.render("home.ejs");
+    res.render("./data/home.ejs");
 });
-
-app.get("/signup", (req, res) => {
-
-})
 
 app.listen(3000, () => {
     console.log("Website is live at 3000!");

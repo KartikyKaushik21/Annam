@@ -1,8 +1,3 @@
-/* =====================================================
-   FOOD DONATION PLATFORM
-   SCRIPT.JS (PART 3A)
-===================================================== */
-
 /*==============================
 LOADER
 ==============================*/
@@ -16,22 +11,6 @@ window.addEventListener("load", function () {
     }, 700);
 
 });
-
-
-/*==============================
-AOS INIT
-==============================*/
-
-// AOS.init({
-
-//     duration: 1000,
-
-//     once: true,
-
-//     offset: 100
-
-// });
-
 
 /*==============================
 ANIMATED COUNTERS
@@ -94,27 +73,6 @@ counters.forEach(counter => {
     counterObserver.observe(counter);
 
 });
-
-
-/*==============================
-STICKY NAVBAR EFFECT
-==============================*/
-
-// const navbar = document.querySelector("nav");
-// console.log(navbar);
-// window.addEventListener("scroll", () => {
-//     console.log(window.scrollY);
-//     if (window.scrollY > 1000) {
-//         console.log("Scrolled!");
-//         navbar.style.background = "rgba(33, 37, 41, .90)";
-//         navbar.style.padding = "10px 0";
-//         navbar.style.boxShadow = "0 8px 25px rgba(0,0,0,.25)";
-//     } else {
-//         navbar.style.background = "rgb(0, 0, 0)";
-//         navbar.style.padding = "14px 0";
-//         navbar.style.boxShadow = "none";
-//     }
-// });
 
 
 /*==============================
