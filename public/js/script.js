@@ -85,52 +85,21 @@ TOP / BOTTOM BUTTON
 const topBtn = document.getElementById("topBtn");
 const arrowIcon = topBtn.querySelector("i");
 
-let lastScrollY = window.scrollY;
-let scrollDirection = "down";
-
 window.addEventListener("scroll", () => {
-
     const currentScrollY = window.scrollY;
-
-    if (currentScrollY > lastScrollY) {
-
-        // Moving DOWN
-        arrowIcon.className = "fas fa-arrow-down";
-        scrollDirection = "down";
-
-    } else if (currentScrollY < lastScrollY) {
-
-        // Moving UP
-        arrowIcon.className = "fas fa-arrow-up";
-        scrollDirection = "up";
-
+    if (currentScrollY > 1000) {
+        topBtn.classList.remove("d-none");
+    }  else {
+        topBtn.classList.add("d-none");
     }
-
-    lastScrollY = currentScrollY;
-
 });
 
-
 topBtn.addEventListener("click", () => {
-
-    if (scrollDirection === "down") {
-
-        // Go to bottom
-        window.scrollTo({
-            top: document.documentElement.scrollHeight,
-            behavior: "smooth"
-        });
-
-    } else {
-
         // Go to top
         window.scrollTo({
             top: 0,
             behavior: "smooth"
         });
-
-    }
-
 });
 
 /*==============================

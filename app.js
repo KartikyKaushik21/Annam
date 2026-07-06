@@ -3,7 +3,6 @@ import path from "path";
 import { fileURLToPath } from "url";
 import ejsMate from "ejs-mate";
 import mongoose from "mongoose";
-import NGO from "./models/ngo.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -13,14 +12,6 @@ const app = express();
 const MONGO_URL = "mongodb://127.0.0.1:27017/annam";
 async function main() {
     await mongoose.connect(MONGO_URL);
-
-    const ngo = new NGO({
-        name: "Old Age Home",
-        email: "abc@gmail.com",
-    });
-
-    await ngo.save();
-    console.log("NGO saved");
 }
 
 main().then(() => [
