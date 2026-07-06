@@ -1,0 +1,62 @@
+<%- layout('layouts/boilerplate') %>
+
+    <div class="row">
+        <div class="col-8 offset-2">
+            <br><br>
+            <h3>Add a new donation</h3>
+            <form action="/donate" method="POST" novalidate class="needs-validation">
+                <div class="mb-3">
+                    <label for="quantity" class="form-label">Quantity:</label>
+                    <input type="text" name="donate[quantity]" class="form-control"
+                        placeholder="Add food's name and weight/number" required>
+                    <div class="valid-feedback">Looks Good!</div>
+                    <div class="invalid-feedback">Enter the quantity!</div>
+                </div>
+                <div class="mb-3">
+                    <label for="pickupTime" class="form-label">Pickup Time:</label>
+                    <input type="time" name="donate[pickupTime]" class="form-control"
+                        placeholder="Add the time for pickup" required>
+                    <div class="valid-feedback">Looks Good!</div>
+                    <div class="invalid-feedback">Time is required!</div>
+                </div>
+                <div class="mb-3">
+                    <label for="foodType" class="form-label">Title:</label>
+                    <input type="text" name="donate[foodType]" class="form-control" placeholder="Veg/Non-veg" required>
+                    <div class="valid-feedback">Looks Good!</div>
+                    <div class="invalid-feedback">Type is must!</div>
+                </div>
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location:</label>
+                    <input type="text" name="donate[location]" class="form-control" placeholder="Tell us where you are"
+                        required>
+                    <div class="valid-feedback">Looks Good!</div>
+                    <div class="invalid-feedback">Enter the location!</div>
+                    <br>
+                    <button class="btn btn-dark add-btn">Add Donation!</button>
+                    <br><br>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>

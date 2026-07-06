@@ -1,5 +1,6 @@
 import express from "express";
 import path from "path";
+import Donate from "./models/donate.js";
 import { fileURLToPath } from "url";
 import ejsMate from "ejs-mate";
 import mongoose from "mongoose";
@@ -35,6 +36,17 @@ app.get("/", (req, res) => {
     res.render("./data/home.ejs");
 });
 
+app.get("/donate", (req, res) => {
+    res.render("./data/donate.ejs");
+})
+
+app.post("/donate", async (req, res) => {
+    const donateData = new Donate(req.body.donate);
+    await donateData.save();
+    console.log("Donation Added");
+    res.redirect("/");
+})
+
 app.listen(3000, () => {
     console.log("Website is live at 3000!");
 });
@@ -42,6 +54,6 @@ app.listen(3000, () => {
 // ADD THIS CODE
 app.get("/admin", (req, res) => {
 
-    res.render("admin");
+    res.render("./data/admin.ejs");
 
 });
