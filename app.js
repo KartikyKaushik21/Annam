@@ -1,6 +1,7 @@
 import express from "express";
 import path from "path";
 import Donate from "./models/donate.js";
+import AdminLogin from "./models/user/admin.js";
 import { fileURLToPath } from "url";
 import ejsMate from "ejs-mate";
 import mongoose from "mongoose";
@@ -38,6 +39,21 @@ app.get("/", (req, res) => {
 
 app.get("/donate", (req, res) => {
     res.render("./data/donate.ejs");
+})
+
+app.get("/register", (req, res) => {
+    res.render("./data/register.ejs");
+});
+
+app.get("/register/admin", (req, res) => {
+    res.render("./data/adminLogin.ejs");
+})
+
+app.post("/register/admin", async (req, res) => {
+    const admin = new AdminLogin(req.body.admin);
+    await admin.save();
+    console.log("Admin Added");
+    res.redirect("/");
 })
 
 app.post("/donate", async (req, res) => {
